@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космос: Удивительные факты</title>
+    <style>
+        /* Основные стили */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-image: url('https://avatars.mds.yandex.net/i?id=0f2f3c5b7ec4aeb5d1b6451cf90ab379_l-9998293-images-thumbs&n=13');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .header {
+            text-align: center;
+            padding: 1em;
+            background: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: 0.5em 0;
+        }
+
+        /* Стили для навигационного меню */
+        nav {
+            margin-top: 0.5em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(28, 181, 224, 0.8);
+        }
+
+        main {
+            padding: 1em 2em;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .description {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 1em 0;
+            padding: 1em;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        .fact-of-the-day {
+            background: rgba(28, 181, 224, 0.8);
+            padding: 1em;
+            border-radius: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1em;
+            background-color: rgba(0, 0, 70, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта с навигационным меню -->
+    <header class="header">
+        <h1>Космос: Удивительные факты</h1>
+        <p>Погрузитесь в мир космоса и откройте для себя самые удивительные и интересные факты о Вселенной!</p>
+        <nav>
+            <ul>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="facts.html">Факты и загадки Вселенной</a></li>
+                <li><a href="quiz.html">Викторина</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Описание сайта -->
+    <section class="description">
+        <p>Этот сайт создан для всех, кто восхищается величием и тайнами космоса. Здесь вы найдете интересные факты, невероятные открытия, и сможете расширить свои знания о Вселенной. Погружайтесь в мир звёзд и галактик, планет и теорий, и пусть космос станет вам немного ближе!</p>
+    </section>
+
+    <!-- Раздел: Факт дня -->
+    <main>
+        <section class="fact-of-the-day">
+            <h2>Факт дня</h2>
+            <p>Знаете ли вы? В нашей галактике, Млечном Пути, более 100 миллиардов звезд!</p>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <p>© 2024 Космос: Удивительные факты</p>
+    </footer>
+
+    <!-- JavaScript для динамического обновления факта дня -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const factOfTheDay = document.querySelector(".fact-of-the-day p");
+            const facts = [
+                "Вселенная расширяется, и галактики удаляются друг от друга.",
+                "На Юпитере и Сатурне идут дожди из гелия и водорода.",
+                "Черные дыры могут искривлять пространство-время.",
+                "Самая большая известная галактика — IC 1101, ее диаметр более 6 миллионов световых лет."
+            ];
+
+            // Случайный выбор факта
+            factOfTheDay.textContent = facts[Math.floor(Math.random() * facts.length)];
+        });
+    </script>
+</body>
+</html>

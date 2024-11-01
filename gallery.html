@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космос: Галерея</title>
+    <style>
+        /* Основные стили */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-image: url('https://avatars.mds.yandex.net/i?id=0f2f3c5b7ec4aeb5d1b6451cf90ab379_l-9998293-images-thumbs&n=13');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .header {
+            text-align: center;
+            padding: 1em;
+            background: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: 0.5em 0;
+        }
+
+        nav {
+            margin-top: 0.5em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(28, 181, 224, 0.8);
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding: 2em;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 2em auto;
+            padding: 0.5em 1.5em;
+            color: #fff;
+            background-color: rgba(28, 181, 224, 0.8);
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        .back-button:hover {
+            background-color: rgba(28, 181, 224, 1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта с навигационным меню -->
+    <header class="header">
+        <h1>Космос: Галерея</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="facts.html">Факты и загадки Вселенной</a></li>
+                <li><a href="quiz.html">Викторина</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Раздел галереи -->
+    <section class="gallery">
+        <img src="https://avatars.mds.yandex.net/i?id=7d5f6ca7c3a7d1a64934d77d728c568c_l-10355200-images-thumbs&n=13" alt="Космос 1">
+        <img src="https://yandex-images.clstorage.net/98nCpy352/d95db4An/4HoOFSn2dN1rEKVQjxETqVsYVbG2hVIMVT9ikwicWRI2gbH8s1rYmuYAhek_yWxdsvUwEwgZrFb2H7avEjmwBlUuG4FccsE5GxD0FD-10gmaGQFwYrTzKdX8ASTPHiqlsKNGjgSeeO9zFfH4S31qu2aRNBaPK7tTgAhE3BLb5KIzyuxmSJe0yJuj9UZc4bA5qwsjo8eUtn6yvYLlj10b1MHDx30271uvUtTj3FlMC2oSY9elbcvYMoM7dk9xmnegQUtPVxhmVdkp8eTnDYGiC0hLshOGlwbO4cyDpHyfKCVRwqbMBB_7X_HUAK6bfml6orKGZ39oShCg6ZbtIbh3USIobSSItMdIubGlNX3jgbqZq-PAJpSXz0CNofYcjokk4JF2XeXs2hwSRbMeaW1byaIQxJauGxmT8flHvdGpBpCCGjw1WVcHKLjCVLce48JYSkrjA4RkV35SnKDlr1waVyEx5hyHTKju4cUw37oOGmmxo5YkjFt6U_DIxl4RuwfyIvksVwlFJPqps6cGj7PyeFuJsWGGBtfP8b3TRF89ScXz8qZdBq6qfPBXwp6YDWhIsTBV5TwJ2lHy2VcPsPlXsWFY_KYoZ_bI-eBERlwAIWv6yTAAx6SVzmI8kpTMP1o1cpH23dTvOr4x1rBuWx9aa6LC1afOGHsT8doEbFHoN6Fz-sz3yRXHOxnyVURN4UJruCqwIbWmRiwBvuJVvexINxOjN8223EpPwncgL8o-i_gBADe1XaqJ02GphnxTqZVRowtOhLulhRuaYHQlT-FBieu5UhFk57ZekOxwBa2MqEcSk0TedKx6vbA2wM_5bBno4AOVBIxpOuEQCdTt8Ir1U6IJ7JToxYaKGtPU5e-CY8ga6_GgNLUGPtB9sfYv_Pll8QMUrPdNad3wNRIPOcy46DKzt0V-i3nwM4j175BK1kOySE7XWsZ0uVqixsYv8mNrS-uwIxbnB97QPnPk749IM" alt="Космос 2">
+        <img src="https://helios-i.mashable.com/imagery/articles/03Swmwu3anAYmSKYpr47mkV/hero-image.fill.size_1200x675.v1721730349.jpg" alt="Космос 3">
+        <img src="https://avatars.mds.yandex.net/i?id=ed69d7fff1595f101fc0d1b310f4965a_l-4234071-images-thumbs&n=13" alt="Космос 4">
+	
+    </section>
+
+    <!-- Кнопка возвращения на главную страницу -->
+    <a href="index.html" class="back-button">На главную страницу</a>
+
+    <footer class="footer">
+        <p>© 2024 Космос: Удивительные факты</p>
+    </footer>
+</body>
+</html>
